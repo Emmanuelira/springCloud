@@ -1,0 +1,13 @@
+spring.application.name=zuul
+eureka.instance.hostname=localhost
+server.port=8081
+
+zuul.prefix=/api
+
+zuul.ignored-services=*
+
+zuul.routes.produtos.path=/produtos/**
+
+zuul.routes.produtos.serviceId=produtos
+
+zuul.routes.produtos.strip-prefix=false
